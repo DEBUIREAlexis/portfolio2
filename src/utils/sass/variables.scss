@@ -1,0 +1,15 @@
+$primary: #296eb4; ///Azul
+$secondary: #000000; ///Black
+$background: #0f0715; ///Dark Purple
+$secondary_background: #8750f7; ///Light Purple
+$highlight: #2a1454; ///Purple
+$text_color: #dddddd; //Almost White
+
+:export {
+  primary: $primary;
+  secondary: $secondary;
+  background: $background;
+  secondary_background: $secondary_background;
+  highlight: $highlight;
+  text_color: $text_color;
+}
