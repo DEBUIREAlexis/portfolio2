@@ -4,6 +4,7 @@ import GlobalStyle from "./utils/style/GlobalStyle";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Project from "./pages/Project";
+import Skills from "./pages/Skills";
 import styled from "styled-components";
 
 const StyledMain = styled.div`
@@ -18,6 +19,7 @@ root.render(
       <Header />
       <Home />
       <Project />
+      <Skills />
     </StyledMain>
   </React.StrictMode>
 );

@@ -10,15 +10,15 @@ const StyledSocialWrap = styled.div`
   align-self: center;
   gap: 16px;
   a {
-    color: ${colors.highlight};
-    border: 2px solid ${colors.highlight};
+    color: ${colors.secondary_background};
+    border: 2px solid ${colors.secondary_background};
     padding: 6px 8px;
     border-radius: 50%;
     transition: all 0.2s linear;
 
     &:hover {
-      color: ${colors.secondary_background};
-      border: 2px solid ${colors.secondary_background};
+      color: ${colors.highlight};
+      border: 2px solid ${colors.highlight};
       transition: all 0.2s linear;
       transform-origin: center;
       background-color: ${colors.text_color};
