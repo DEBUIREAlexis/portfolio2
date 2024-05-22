@@ -12,7 +12,11 @@ const StyledSocialWrap = styled.div`
   a {
     color: ${colors.secondary_background};
     border: 2px solid ${colors.secondary_background};
-    padding: 6px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 42px;
     border-radius: 50%;
     transition: all 0.2s linear;
 

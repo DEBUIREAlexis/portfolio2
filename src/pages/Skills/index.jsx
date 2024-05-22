@@ -10,15 +10,17 @@ import javascript from "../../assets/jsLogo.svg";
 
 const StyledWrapper = styled.div`
   background-color: transparent;
-  margin-top: 40px;
-  padding: 0 40px;
+  max-width: 640px;
+  padding: 60px 40px 30px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
 `;
 
 const StyledTitle = styled.h2`
   font-size: 32px;
+  margin: 0;
   letter-spacing: 1px;
   background: linear-gradient(
     to right,
@@ -39,15 +41,20 @@ const StyledCardWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+  padding: 40px 0;
   justify-content: center;
+  max-width: 800px;
+  @media (min-width: 600px) {
+    gap: 48px;
+  }
 `;
 
 function Skills() {
   return (
-    <StyledWrapper>
+    <StyledWrapper id="skill">
       <StyledTitle>Mes compétences</StyledTitle>
       <StyledDescription>
-        Voici mes compétences en web et autre
+        Voici mes compétences en web et autres
       </StyledDescription>
       <StyledCardWrapper>
         <SkillCard logo={figma} name="Figma" />

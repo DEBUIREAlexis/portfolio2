@@ -8,6 +8,16 @@ const StyledCard = styled.div`
   flex-flow: column;
   align-items: center;
   padding: 8px;
+  border-radius: 16px;
+  border: solid 2px ${colors.highlight};
+  transition: all 0.2s linear;
+
+  &:hover {
+    color: ${colors.highlight};
+    border: 2px solid ${colors.secondary_background};
+    transition: all 0.2s linear;
+    transform-origin: center;
+    background-color: ${colors.text_color};
 `;
 
 const StyledLogo = styled.img`

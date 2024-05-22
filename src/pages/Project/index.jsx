@@ -18,6 +18,10 @@ const StyledWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 400px) {
+    padding: 60px 20px 30px 20px;
+  }
 `;
 
 const StyledCardWrapper = styled.div`
@@ -60,10 +64,10 @@ function Project() {
     "MongoDB",
   ];
   return (
-    <StyledWrapper>
+    <StyledWrapper id="project">
       <StyledTitle>Mes projets récents</StyledTitle>
       <StyledDescription>
-        Voici les trois dernier projets que j'ai fait pendant ma formation
+        Voici les trois derniers projets que j'ai faits pendant ma formation
       </StyledDescription>
       <StyledCardWrapper>
         <ProjectCard

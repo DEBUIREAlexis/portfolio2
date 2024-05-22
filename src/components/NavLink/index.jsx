@@ -9,7 +9,7 @@ const StyledNavLink = styled.a`
 function NavigationLink({ to, title }) {
   return (
     <StyledNavLink
-      to={to}
+      href={to}
       className={({ isActive }) => (isActive ? "active" : "")}
     >
       {title}

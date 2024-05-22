@@ -105,8 +105,8 @@ function Home() {
         </StyledRight>
 
         <StyledP className="middle-left">
-          Bienvenu sur mon site, il permet de me présenter et c'est aussi le
-          projet final de ma formation
+          Bienvenue sur mon site ! Vous y découvrirez ma présentation
+          personnelle et c'est aussi mon projet final de formation.
         </StyledP>
         <Socials class="bottom-left" />
       </StyledImgTitle>

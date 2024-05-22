@@ -4,6 +4,34 @@ import styled from "styled-components";
 import NavigationLink from "../NavLink";
 import Hamburger from "../Hamburger";
 
+function NavBar() {
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+  const toggleHamburger = () => {
+    setHamburgerOpen(!hamburgerOpen);
+  };
+
+  return (
+    <StyledNav>
+      <ul className={hamburgerOpen ? "open-burg" : ""}>
+        <li>
+          <NavigationLink to="#project" title="Mes projets"></NavigationLink>
+        </li>
+        <li>
+          <NavigationLink to="#skill" title="Mes compétences"></NavigationLink>
+        </li>
+        <li>
+          <NavigationLink to="#contact" title="Me contacter"></NavigationLink>
+        </li>
+      </ul>
+      <div onClick={toggleHamburger} className="hamburger burger-padding">
+        <Hamburger isOpen={hamburgerOpen} />
+      </div>
+    </StyledNav>
+  );
+}
+
+export default NavBar;
+
 const StyledNav = styled.nav`
   display: flex;
   margin-right: 12px;
@@ -11,6 +39,7 @@ const StyledNav = styled.nav`
   gap: 10px;
   a {
     text-decoration: none;
+    cursor: pointer;
   }
 
   ul {
@@ -30,6 +59,7 @@ const StyledNav = styled.nav`
 
   .hamburger {
     z-index: 8;
+    cursor: pointer;
   }
 
   @media (max-width: 400px) {
@@ -43,7 +73,7 @@ const StyledNav = styled.nav`
       transform-origin: top;
       display: flex;
       flex-direction: column;
-
+      align-items: center;
       margin: 0;
       left: 0;
       top: 0;
@@ -73,31 +103,3 @@ const StyledNav = styled.nav`
     }
   }
 `;
-
-function NavBar() {
-  const [hamburgerOpen, setHamburgerOpen] = useState(false);
-  const toggleHamburger = () => {
-    setHamburgerOpen(!hamburgerOpen);
-  };
-
-  return (
-    <StyledNav>
-      <ul className={hamburgerOpen ? "open-burg" : ""}>
-        <li>
-          <NavigationLink to="/" title="À propos"></NavigationLink>
-        </li>
-        <li>
-          <NavigationLink to="/projects" title="Mes projets"></NavigationLink>
-        </li>
-        <li>
-          <NavigationLink to="/contact" title="Me contacter"></NavigationLink>
-        </li>
-      </ul>
-      <div onClick={toggleHamburger} className="hamburger burger-padding">
-        <Hamburger isOpen={hamburgerOpen} />
-      </div>
-    </StyledNav>
-  );
-}
-
-export default NavBar;
