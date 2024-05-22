@@ -1,15 +1,15 @@
 import colors from "../../utils/style/colors";
 import styled from "styled-components";
 import ProjectCard from "../../components/ProjectCard";
-import Ks1 from "../../assets/KS-1.png";
-import Ks2 from "../../assets/KS-2.png";
-import Ks3 from "../../assets/KS-3.png";
-import Nc1 from "../../assets/NC-1.png";
-import Nc2 from "../../assets/NC-2.png";
-import Nc3 from "../../assets/NC-3.png";
-import Vg1 from "../../assets/VG-1.png";
-import Vg2 from "../../assets/VG-2.png";
-import Vg3 from "../../assets/VG-3.png";
+import Ks1 from "../../assets/KS-1.webp";
+import Ks2 from "../../assets/KS-2.webp";
+import Ks3 from "../../assets/KS-3.webp";
+import Nc1 from "../../assets/NC-1.webp";
+import Nc2 from "../../assets/NC-2.webp";
+import Nc3 from "../../assets/NC-3.webp";
+import Vg1 from "../../assets/VG-1.webp";
+import Vg2 from "../../assets/VG-2.webp";
+import Vg3 from "../../assets/VG-3.webp";
 
 const StyledWrapper = styled.div`
   background-color: ${colors.highlight};
@@ -79,7 +79,7 @@ function Project() {
         />
         <ProjectCard
           list={imgList.splice(0, 3)}
-          text="Au cours de mes études, j'ai entrepris un projet inhabituel consistant à optimiser le site web d'une photographe confrontée à des problèmes d'optimisation technique et de référencement SEO insatisfaisants. Le défi majeur résidait dans l'absence d'optimisation du site initial, principalement due à des images trop volumineuses au format obsolète. L'objectif était d'atteindre un score Lighthouse supérieur à 90% dans tous les domaines, notamment sur mobile.
+          text="Au cours de mes études, j'ai entrepris un projet inhabituel consistant à optimiser le site web d'une photographe confrontée à des problèmes d'optimisation technique et de référencement SEO insatisfaisants. Le défi majeur résidait dans l'absence d'optimisation du site initial, principalement due à des images trop volumineuses au format obsolète. L'objectif était d'atteindre un score Lighthouse supérieur à 90 % dans tous les domaines, notamment sur mobile.
           "
           title="Optimisation d'un site"
           tech={techList.splice(0, 3)}

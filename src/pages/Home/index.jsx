@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import colors from "../../utils/style/colors";
-import Portrait from "../../assets/Photoprofil.png";
+import Portrait from "../../assets/Photoprofil.webp";
 import Socials from "../../components/Socials";
 
 const StyledWrapper = styled.div`

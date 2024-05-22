@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import colors from "../../utils/style/colors";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function StyledInfo(props) {

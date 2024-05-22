@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import colors from "../../utils/style/colors";
 import NavBar from "../NavBar";
 import Logo from "../../assets/Logo.webp";
 
