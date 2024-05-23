@@ -19,27 +19,32 @@ function ProjectCard(props) {
         </div>
       </div>
 
-      <StyledDialog id={idForModal}>
-        <Slideshow picture={props.list} />
-        <StyledDescWrapper>
-          <StyledList>
-            <li>{props.tech[0]}</li>
-            <li>{props.tech[1]}</li>
-            <li>{props.tech[2]}</li>
-          </StyledList>
-          <StyledText>{props.text}</StyledText>
-        </StyledDescWrapper>
-        <StyledDivButton>
-          <div></div>
-          <button
-            autoFocus
-            onClick={() => document.querySelector("#" + idForModal).close()}
-            className="button_dialog_close"
-          >
-            Fermer
-          </button>
-          <div></div>
-        </StyledDivButton>
+      <StyledDialog
+        id={idForModal}
+        onClick={() => document.querySelector("#" + idForModal).close()}
+      >
+        <div onClick={(e) => e.stopPropagation()}>
+          <Slideshow picture={props.list} />
+          <StyledDescWrapper>
+            <StyledList>
+              <li>{props.tech[0]}</li>
+              <li>{props.tech[1]}</li>
+              <li>{props.tech[2]}</li>
+            </StyledList>
+            <StyledText>{props.text}</StyledText>
+          </StyledDescWrapper>
+          <StyledDivButton>
+            <div></div>
+            <button
+              autoFocus
+              onClick={() => document.querySelector("#" + idForModal).close()}
+              className="button_dialog_close"
+            >
+              Fermer
+            </button>
+            <div></div>
+          </StyledDivButton>
+        </div>
       </StyledDialog>
     </StyledCard>
   );
@@ -150,13 +155,16 @@ const StyledText = styled.p`
 `;
 
 const StyledDialog = styled.dialog`
-  width: 90%;
-  padding: 0;
-  border: 4px solid ${colors.highlight};
-  border-radius: 16px;
-  @media (min-width: 790px) {
-    max-width: 700px;
-  }
+width: 90%;
+padding: 0;
+border: none;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+@media (min-width: 790px) {
+  max-width: 700px;
+}
+@media(min-width: 1100px{
+  max-width: 900px;
+})
 `;
 
 const StyledTitle = styled.h3`
